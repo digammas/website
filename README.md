@@ -1,2 +1,3 @@
-# website
-Official web site
+# Digamma Solutions Website
+
+Official web site pages.
