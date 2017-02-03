@@ -48,9 +48,6 @@ a img{
 }
 
 .mdl-button--fab {
-  position: absolute;
-  right: 20%;
-  bottom: -26px;
   z-index: 3;
   background: #9BCFC6 !important;
   color: black !important;
@@ -105,7 +102,7 @@ a img{
 }
 
 .digamma-about .digamma-bar {
-  background:  #728BB2;
+  background:  #728BB 2;
   height: 200px;
 }
 
