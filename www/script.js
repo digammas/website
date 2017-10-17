@@ -10,4 +10,12 @@ $(function() {
       }
     }
   });
+  $("main").scroll(function() {
+    console.log($(this).scrollTop());
+    if ($(this).scrollTop() == 0) {
+      $(".digamma-top-button").removeClass("shown");
+    } else {
+      $(".digamma-top-button").addClass("shown");
+    }
+  });
 });
