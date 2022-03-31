@@ -26,7 +26,7 @@
       <div class="mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
           <span class="mdl-layout-title">
-            <img class="digamma-logo-image" src="images/digamma-logo.png">
+            <img class="digamma-logo-image" src="images/digamma-logo.png" alt="Digamma logo" />
           </span>
           <!-- Add spacer, to align navigation to the right in desktop -->
           <div class="digamma-header-spacer mdl-layout-spacer"></div>
@@ -50,7 +50,7 @@
           <button class="digamma-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
             <i class="material-icons">more_vert</i>
           </button>
-          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" data-mdl-for="more-button">
             <li class="mdl-menu__item">Partners</li>
             <li class="mdl-menu__item">About Digamma</li>
           </ul>
@@ -59,7 +59,7 @@
 
       <div class="digamma-drawer mdl-layout__drawer">
         <span class="mdl-layout-title">
-          <img class="digamma-logo-image" src="images/digamma-logo-white.png">
+          <img class="digamma-logo-image" src="images/digamma-logo-white.png" alt="Digamma logo" />
         </span>
         <nav class="mdl-navigation">
           <a class="mdl-navigation__link" href="#digamma-projects">Projects</a>
@@ -71,15 +71,14 @@
         </nav>
       </div>
 
-      <main class="digamma-content mdl-layout__content">
-        <a name="top"></a>
+      <main class="digamma-content mdl-layout__content" id="top">
         <div class="mdl-typography--text-center">
           <div class="logo-font digamma-sub-slogan">Digamma Solutions</div>
           <h1 class="logo-font">Make it Happen</h1>
           <div class="digamma-card-container mdl-grid">
             <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
               <div class="mdl-card__media">
-                <img src="images/frontend.png">
+                <img src="images/frontend.png" alt="Frontend" />
               </div>
               <div class="mdl-card__title">
                  <h4 class="mdl-card__title-text">Frontend</h4>
@@ -107,7 +106,7 @@
 
             <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
               <div class="mdl-card__media">
-                <img src="images/iot.png">
+                <img src="images/iot.png" alt="IoT" />
               </div>
               <div class="mdl-card__title">
                  <h4 class="mdl-card__title-text">IoT</h4>
@@ -136,7 +135,7 @@
 
             <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
               <div class="mdl-card__media">
-                <img src="images/backend.png">
+                <img src="images/backend.png" alt="Backend" />
               </div>
               <div class="mdl-card__title">
                  <h4 class="mdl-card__title-text">Backend</h4>
@@ -150,7 +149,6 @@
                 </span>
                   <span class="mdl-chip">
                   <span class="mdl-chip__text">OSGi</span>
-                </span>
                 </span>
                 <span class="mdl-chip">
                   <span class="mdl-chip__text">OpenAPI</span>
@@ -166,10 +164,8 @@
           </div>
         </div>
 
-        <div class="digamma-projects digamma-section">
-          <a name="digamma-projects"></a>
-          <div class="digamma-frontend">
-            <a name="digamma-frontend"></a>
+        <div class="digamma-projects digamma-section" id="digamma-projects">
+          <div class="digamma-frontend" id="digamma-frontend">
             <div class="digamma-bar">
               <h2>Put end user first</h2>
               <a class="mdl-typography--font-light mdl-button--fab mdl-button" href="#top">
@@ -181,7 +177,7 @@
             <ul class="mdl-list">
               <li class="mdl-list__item mdl-list__item--three-line">
                 <div class="mdl-list__item-primary-content">
-                  <img class="mdl-list__item-icon" src="images/ca.png"/>
+                  <img class="mdl-list__item-icon" src="images/ca.png" alt="CookAlchemy" />
                   <div><a href="http://www.cookalchemy.com" target="_blank">CookAlchemy.com</a></div>
                   <div class="mdl-list__item-text-body">
                     A multi-lingual cookbook wiki.
@@ -190,7 +186,7 @@
               </li>
               <li class="mdl-list__item mdl-list__item--three-line">
                 <div class="mdl-list__item-primary-content">
-                  <img class="mdl-list__item-icon" src="images/cohorte.jpg"/>
+                  <img class="mdl-list__item-icon" src="images/cohorte.jpg" alt="Cohorte" />
                   <div>
                     <a href="http://www.cohorte-technologies.com"  target="_blank">
                       Cohorte IoT Pack - Web Console
@@ -203,7 +199,7 @@
               </li>
               <li class="mdl-list__item mdl-list__item--three-line">
                 <div class="mdl-list__item-primary-content">
-                  <img class="mdl-list__item-icon" src="images/gfi.png"/>
+                  <img class="mdl-list__item-icon" src="images/gfi.png" alt="Gfi" />
                   <div><a href="https://www.cleva.fr"  target="_blank">Gfi Cleva - B2C portal</a></div>
                   <div class="mdl-list__item-text-body">
                     Customers web portal for insurance products management
@@ -212,8 +208,7 @@
               </li>
             </ul>
           </div>
-          <div class="digamma-iot">
-            <a name="digamma-iot"></a>
+          <div class="digamma-iot" id="digamma-iot">
             <div class="digamma-bar">
               <h2>Keep abreast</h2>
               <a class="mdl-typography--font-light mdl-button--fab mdl-button" href="#top">
@@ -225,7 +220,7 @@
             <ul class="mdl-list">
               <li class="mdl-list__item mdl-list__item--three-line">
                 <div class="mdl-list__item-primary-content">
-                  <img class="mdl-list__item-icon" src="images/rtone.png"/>
+                  <img class="mdl-list__item-icon" src="images/rtone.png" alt="Rtone" />
                   <div>
                     <a href="https://rtone.fr/portfolio-item/application-web-de-gestion-smart-city/"  target="_blank">
                       Rtone Smart City
@@ -238,7 +233,7 @@
               </li>
               <li class="mdl-list__item mdl-list__item--three-line">
                 <div class="mdl-list__item-primary-content">
-                  <img class="mdl-list__item-icon" src="images/cohorte.jpg"/>
+                  <img class="mdl-list__item-icon" src="images/cohorte.jpg" alt="Cohorte" />
                   <div>
                     <a href="http://www.cohorte-technologies.com"  target="_blank">
                       Cohorte IoT Pack - Device Module
@@ -251,8 +246,7 @@
               </li>
             </ul>
           </div>
-          <div class="digamma-backend">
-            <a name="digamma-backend"></a>
+          <div class="digamma-backend" id="digamma-backend">
             <div class="digamma-bar">
               <h2>Be equipped</h2>
               <a class="mdl-typography--font-light mdl-button--fab mdl-button" href="#top">
@@ -264,7 +258,7 @@
             <ul class="mdl-list">
               <li class="mdl-list__item mdl-list__item--three-line">
                 <div class="mdl-list__item-primary-content">
-                  <img class="mdl-list__item-icon" src="images/agilium.png"/>
+                  <img class="mdl-list__item-icon" src="images/agilium.png" alt="Agilium" />
                   <div><a href="http://agilium.com/fr/ged/" target="_blank">Agilium DMS</a></div>
                   <div class="mdl-list__item-text-body">
                     REST API for a global DMS solution.
@@ -273,7 +267,7 @@
               </li>
               <li class="mdl-list__item mdl-list__item--three-line">
                 <div class="mdl-list__item-primary-content">
-                  <img class="mdl-list__item-icon" src="images/viflow.png"/>
+                  <img class="mdl-list__item-icon" src="images/viflow.png" alt="Viflow" />
                   <div><a href="https://www.viflow.de/en/viflow-dms.html"  target="_blank">viflow DMS</a></div>
                   <div class="mdl-list__item-text-body">
                     A DMS system with easy Windows installer, and a full integration with MS Office kit.
@@ -282,7 +276,7 @@
               </li>
               <li class="mdl-list__item mdl-list__item--three-line">
                 <div class="mdl-list__item-primary-content">
-                  <img class="mdl-list__item-icon" src="images/april.png"/>
+                  <img class="mdl-list__item-icon" src="images/april.png" alt="April" />
                   <div>
                     <a href="http://groupe.april.fr/simple-curieux/activites-et-societes/nos-societes/april-technologies" target="_blank">
                       April Technologies
@@ -295,7 +289,7 @@
               </li>
               <li class="mdl-list__item mdl-list__item--three-line">
                 <div class="mdl-list__item-primary-content">
-                  <img class="mdl-list__item-icon" src="images/gfi.png"/>
+                  <img class="mdl-list__item-icon" src="images/gfi.png" alt="Gfi" />
                   <div><a href="https://www.cleva.fr" target="_blank">Gfi Cleva - REST API</a></div>
                   <div class="mdl-list__item-text-body">
                     Restful API for Cleva insurance backend
@@ -306,8 +300,7 @@
           </div>
         </div>
 
-        <section class="digamma-about digamma-section">
-          <a name="digamma-about"></a>
+        <section class="digamma-about digamma-section" id="digamma-about">
           <div class="digamma-bar">
             <h2>About us</h2>
           </div>
@@ -342,7 +335,7 @@
               Language
               <i class="material-icons">arrow_drop_up</i>
             </a>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="language-dropdown">
+            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" data-mdl-for="language-dropdown">
               <li class="mdl-menu__item">English</li>
               <li class="mdl-menu__item">Frensh</li>
             </ul>
